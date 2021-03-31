@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>login/check_checked.png</file>
+        <file>login/check_hover.png</file>
+        <file>login/line.png</file>
+        <file>login/login_background.png</file>
+        <file>login/logo_login.png</file>
+        <file>login/passwd.png</file>
+        <file>login/tip_icon.png</file>
+        <file>login/uncheck_hover.png</file>
+        <file>login/uncheck_normal.png</file>
+        <file>login/user.png</file>
+        <file>login/user_o_checked.png</file>
+        <file>login/user_o_normal.png</file>
+        <file>login/user_t_checked.png</file>
+        <file>login/user_t_normal.png</file>
+        <file>logindialog.qss</file>
+        <file>login/greep.png</file>
+        <file>login/gree.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>web/echarts.min.js</file>
+        <file>web/styleDark.js</file>
+        <file>web/myDark.js</file>
+        <file>web/dsData.html</file>
+        <file>web/dsData.js</file>
+        <file>web/dsNow.html</file>
+        <file>web/dsNow.js</file>
+    </qresource>
+</RCC>

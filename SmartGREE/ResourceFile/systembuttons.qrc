@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>System/close_hover.png</file>
+        <file>System/close_normal.png</file>
+        <file>System/close_press.png</file>
+        <file>System/max_hover.png</file>
+        <file>System/max_normal.png</file>
+        <file>System/max_press.png</file>
+        <file>System/min_hover.png</file>
+        <file>System/min_normal.png</file>
+        <file>System/min_press.png</file>
+        <file>System/restore_hover.png</file>
+        <file>System/restore_normal.png</file>
+        <file>System/restore_press.png</file>
+        <file>systembuttons.qss</file>
+    </qresource>
+</RCC>

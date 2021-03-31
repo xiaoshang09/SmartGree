@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingPlcWidget</class>
+ <widget class="QWidget" name="SettingPlcWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>465</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>65</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>47</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QLabel,QCheckBox{
+	color: #b6b6b6;
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 12px;
+}
+
+QLineEdit{
+    color: #f0f0f0;
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 12px;
+    border-radius:6px;
+    border-width:0px;
+    border-style:none;
+    background: #3b3b3b;
+    min-height:32px;
+    max-height:32px;
+    padding-left:8px;
+}
+
+QLineEdit:focus
+{
+    color: #ffffff;
+    border: 1px solid #7d551b;
+}
+
+QPushButton{
+    color: #f0f0f0;
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 12px;
+    border-radius:6px;
+    border-width:0px;
+    border-style:none;
+    background:#474747;
+    min-height:32px;
+    max-height:32px;
+}
+
+
+QSpinBox
+{
+    min-height: 28px;
+    max-height: 28px;
+    font-size: 12px;
+	font-family: &quot;Microsoft YaHei&quot;;
+    border-radius: 6px;
+	border:1px solid gray;
+    color: #b6b6b6;
+    background: #3b3b3b;
+    margin: 0px;
+}
+
+QSpinBox:disabled
+{
+    color: #ccc;
+}
+
+QSpinBox:focus
+{
+    color: #ffffff;
+    border: 1px solid #7d551b;
+}
+
+
+QSpinBox:up-button,QDoubleSpinBox:up-button
+{
+    min-height: 12px;
+    max-height: 12px;
+    min-width: 38px;
+    max-width: 38px;
+	
+    background-image: url(:/Images/System/btn-up-normal.png);
+}
+
+QSpinBox:down-button,QDoubleSpinBox:down-button
+{
+    min-height: 12px;
+    max-height: 12px;
+    min-width: 38px;
+    max-width: 38px;
+    background-image: url(:/Images/System/btn-down-normal.png);
+}</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>当前状态:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_state">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>已断开</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>IP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_ip">
+        <property name="minimumSize">
+         <size>
+          <width>260</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>192.168.1.20</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>端口</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="spinBox_port">
+        <property name="minimum">
+         <number>1001</number>
+        </property>
+        <property name="maximum">
+         <number>65536</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QCheckBox" name="checkBox_auto">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>自动连接</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>47</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>64</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

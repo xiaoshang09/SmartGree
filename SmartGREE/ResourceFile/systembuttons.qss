@@ -1,0 +1,77 @@
+﻿
+/************系统按钮最小******************/
+QPushButton#pushButton_sysMin
+{
+    qproperty-text:"";
+    qproperty-minimumSize: 60px 26px;
+    qproperty-maximumSize: 60px 26px;
+    border-image:url(:System/min_normal.png);
+}
+QPushButton#pushButton_sysMin:hover
+{
+    border-image:url(:System/min_hover.png);
+}
+QPushButton#pushButton_sysMin:pressed
+{
+    border-image:url(:System/min_press.png);
+}
+QPushButton#pushButton_sysMin:focus
+{
+    border-image:url(:System/restore_normal.png);
+}
+
+/************系统按钮最大******************/
+QPushButton#pushButton_sysMax
+{
+        qproperty-text:"";
+    qproperty-minimumSize: 60px 26px;
+    qproperty-maximumSize: 60px 26px;
+    border-image:url(:System/max_normal.png);
+}
+
+QPushButton#pushButton_sysMax:hover
+{
+    border-image:url(:System/max_hover.png);
+}
+QPushButton#pushButton_sysMax:pressed
+{
+    border-image:url(:System/max_press.png);
+}
+QPushButton#pushButton_sysMax:focus
+{
+    border-image:url(:System/restore_normal.png);
+}
+/************pushButton_sysMax isMax******************/
+QPushButton#pushButton_sysMax:checked
+{
+    border-image:url(:System/restore_normal.png);
+}
+QPushButton#pushButton_sysMax:checked:hover
+{
+    border-image:url(:System/restore_hover.png);
+}
+QPushButton#pushButton_sysMax:checked:pressed
+{
+    border-image:url(:System/restore_press.png);
+}
+/************系统按钮关闭******************/
+QPushButton#pushButton_sysClose
+{
+        qproperty-text:"";
+    qproperty-minimumSize: 60px 26px;
+    qproperty-maximumSize: 60px 26px;
+    border-image:url(:System/close_normal.png);
+}
+QPushButton#pushButton_sysClose:hover
+{
+    border-image:url(:System/close_hover.png);
+}
+QPushButton#pushButton_sysClose:pressed
+{
+    border-image:url(:System/close_press.png);
+}
+
+QPushButton#pushButton_sysClose:focus
+{
+    border-image:url(:System/restore_normal.png);
+}

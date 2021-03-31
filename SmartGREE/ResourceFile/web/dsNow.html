@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>ECharts</title>
+<!-- 引入 echarts -->
+<script src="qrc:/web/echarts.min.js"></script>
+<script type="text/javascript" >
+console.log("web init 1!");
+</script>
+
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 750px;height:450px;"></div>
+
+<!--主题-->
+<!-- <script src="qrc:/web/styleDark.js"></script> -->
+<!-- <script src="qrc:/web/myDark.js"></script> -->
+
+<!--显示-->
+<!--<script  type="text/javascript" src="qrc:/web/ds.js"></script>-->
+<script  type="text/javascript" src="./dsNow.js"></script>
+
+
+<!--<script type="text/javascript" >
+console.log("web init ok!");
+</script>-->
+
+<!--
+<script type="text/javascript">
+
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('main'));
+
+function setSize(size){
+// 首先是取到元素
+var main = document.getElementById('main');
+main.style.width = size["width"] + "px";
+main.style.height = size["height"] + "px";
+myChart.resize();
+}
+
+function init(){
+var option = {
+title: {
+text: "空数据",
+x: "center"
+},
+tooltip: {
+trigger: "item",
+formatter: "{a} <br/>{b} : {c}"
+},
+legend: {
+x: 'left',
+},
+xAxis: [
+{
+type: "category",
+name: "时间轴",
+splitLine: {show: false},
+data: ["一", "二", "三", "四", "五", "六", "七",]
+}
+],
+yAxis: [
+{
+type: "value",
+name: "数据"
+}
+],
+calculable: true,
+series: [
+{
+name: "无产品",
+type: "bar",
+// data: [0, 2, 3, 4, 5, 6, 7, 9, 5]
+
+}
+]
+};
+
+myChart.setOption(option);
+}
+
+
+var _jsObj =  {
+"data":
+{
+"AAAAA":[["2020-01-05","AAAAA",0,0,0,0,0],["2020-01-24","AAAAA",1896,1781,115,0.75153173605601,39.577777777777776],["2020-01-25","AAAAA",280,275,5,0.7015306183270046,39.285714285714285],["2020-01-31","AAAAA",0,0,0,0,0]],
+"BBBBB":[["2020-01-12","BBBBB",0,0,0,0,0],["2020-01-17","BBBBB",0,0,0,0,0],["2020-01-24","BBBBB",0,0,0,0,0]],
+"CCCCCC":[["2020-01-12","CCCCCC",1661,1527,134,0.7757571523006146,39.15384615384615],["2020-01-24","CCCCCC",80,74,6,0.3700000047683716,14.8],["2020-01-25","CCCCCC",80,70,10,0.4375,17.5]],
+"OthersData":[["2020-01-01","","","",""],["2020-01-02","","","",""],["2020-01-03","","","",""],["2020-01-04","","","",""],["2020-01-05",0,0,360,""],["2020-01-06","","","",""],["2020-01-07","","","",""],["2020-01-08","","","",""],["2020-01-09","","","",""],["2020-01-10","","","",""],["2020-01-11","","","",""],["2020-01-12",0,2,4800,""],["2020-01-13","","","",""],["2020-01-14","","","",""],["2020-01-15","","","",""],["2020-01-16","","","",""],["2020-01-17",0,1,360,""],["2020-01-18","","","",""],["2020-01-19","","","",""],["2020-01-20","","","",""],["2020-01-21","","","",""],["2020-01-22","","","",""],["2020-01-23","","","",""],["2020-01-24",0,8,6960,""],["2020-01-25",0,8,1200,""],["2020-01-26","","","",""],["2020-01-27","","","",""],["2020-01-28","","","",""],["2020-01-29","","","",""],["2020-01-30","","","",""],["2020-01-31",0,0,360,""]]
+},
+"dataSum":{
+"AAAAA":[["2020-01-31","AAAAA",2176,2056,120,0.3632655739784241,19.71587371826172]],
+"BBBBB":[["2020-01-24","BBBBB",0,0,0,0,0]],"CCCCCC":[["2020-01-25",
+"CCCCCC",1821,1671,150,0.5277523994445801,23.817947387695312]],
+"OthersData":[["2020-01-31",0,19,452.9032287597656,""]]},"tableName":"月表:2020-01"
+};
+
+
+function setData(jsObj) {
+// var jsObj = _jsObj;
+// .getAttribute("value")
+// var inData = jsObj.getAttribute("data");
+
+//
+var gridsList  = [];
+var xAxisList  = [];
+var yAxisList  = [];
+var titleList  = [];
+var seriesList = [];
+//
+var inData = jsObj["data"];
+var inDataSum = jsObj["dataSum"];
+var titleNameList = jsObj["tableName"];
+//
+var pruductList = Object.keys(inData);
+var _count = pruductList.length;
+
+if (pruductList.length === 0) {
+console.log("data null !");
+
+gridsList.push({
+show: true,
+borderWidth: 0,
+// backgroundColor: '#fff',
+// shadowColor: 'rgba(0, 0, 0, 0.3)',
+// shadowBlur: 2,
+containLabel: true,
+left: '0%',
+top: _top + '%',
+width: '70%',
+height: h +'%',
+});
+xAxisList.push({
+type: 'category',//离散型数据
+show: true,
+gridIndex: idx,
+// boundaryGap: true, //数据范围
+splitNumber: 11, //11个刻度线，也就是10等分
+axisLabel: {
+// interval:0,
+rotate:40
+}
+});
+yAxisList.push({
+type: 'value',
+show: true,
+gridIndex: idx,
+
+});
+// titleList.push({
+//                    // textAlign: 'center',
+//                    text: pruductList[idx],
+//                    textStyle: {
+//                        fontSize: 14,
+//                        // fontWeight: 'normal'
+//                    },
+//                    left: '10%',
+//                    top: (_top-4) + '%',
+//                });
+} else {
+console.log("pruductList:" + pruductList) ;
+}
+
+
+//左边条形图
+for(var idx = 0; idx < pruductList.length; idx++) {
+var key=pruductList[idx];
+// echarts.util.each(pruductList,
+// function (key, idx) {
+//
+
+//======条形图 data=====================
+
+var lineData = [];
+
+if (pruductList[idx] === 'OthersData') {
+//TODO 特殊数据
+
+}else{
+lineData = inData[pruductList[idx]].map(function(item) {
+return [item[0], item[2]];
+});
+}
+
+//======条形图 pos=====================
+var startSpace = 3;
+var space = 5;
+var h=((100-space*(_count+1))/_count);
+var _top=space+(space+h)*idx+startSpace;
+var centerX=70;
+var centerY= (_top + h/2);
+
+gridsList.push({
+show: true,
+borderWidth: 0,
+// backgroundColor: '#fff',
+// shadowColor: 'rgba(0, 0, 0, 0.3)',
+// shadowBlur: 2,
+containLabel: true,
+left: '0%',
+top: _top + '%',
+width: '70%',
+height: h +'%',
+});
+xAxisList.push({
+type: 'category',//离散型数据
+show: true,
+gridIndex: idx,
+// boundaryGap: true, //数据范围
+splitNumber: 11, //11个刻度线，也就是10等分
+axisLabel: {
+// interval:0,
+rotate:40
+}
+});
+yAxisList.push({
+type: 'value',
+show: true,
+gridIndex: idx,
+
+});
+titleList.push({
+// textAlign: 'center',
+text: pruductList[idx],
+textStyle: {
+fontSize: 14,
+// fontWeight: 'normal'
+},
+left: '10%',
+top: (_top-4) + '%',
+});
+
+seriesList.push({
+type: 'bar',
+//        stack: 'chart',3.注意stack---数据堆叠，同个类目轴上系列配置相同的stack值后，
+//后一个系列的值会在前一个系列的值上相加。 所以最后的解决方法是，，stack去掉，，或者stack给不同的值。。
+
+xAxisIndex: idx,
+yAxisIndex: idx,
+
+label: {
+normal: {
+//         position: 'right',
+show: true
+}
+},
+
+name: pruductList[idx],
+//有效区分0和1
+barMinHeight: 1,
+// itemStyle : { normal: {label : {show: true}}},
+showSymbol: 'auto',
+//显示数据点 auto如果有足够空间则显示数据点，否则随主轴标签间隔隐藏策略。 false随主轴标签间隔隐藏策略。
+showAllSymbol: 'auto',
+//显示数据点
+sampling: 'average',
+//抽样
+tooltip: {
+// displayName:'',
+//                            show: true,
+position: 'top',
+// formatter: [ '{c}','{b}' ].join('\n'),
+formatter: ['{c}'],
+},
+markPoint: { //最大最小值标记
+data: [{
+type: 'max',
+name: '最大值'
+},
+{
+type: 'min',
+name: '最小值'
+}]
+},
+data:lineData,
+});
+
+
+}
+// });
+
+//右边统计图
+for(var idx = 0; idx < pruductList.length; idx++) {
+var key=pruductList[idx];
+
+//======统计图  data=====================
+
+var pieData = [];
+
+if (pruductList[idx] === 'OthersData') {
+//TODO 特殊数据
+// console.log("item[2]==pruductList[idx]===="+ pruductList[idx]  );
+}else{
+
+for(var j=0;j<7;j++){
+
+}
+var _dat  = inDataSum[pruductList[idx]].map(function(item) {
+// console.log("item[2]==88===="+ pruductList[idx] +item[0]+ ","+item[2] );
+return [pruductList[idx] , item[2]];
+});
+// console.log("_dat========"+_dat[0][0]+","+ _dat[0][1]);
+pieData.push({  name: _dat[0][0], value: _dat[0][1] });
+
+}
+
+//======统计图  pos=====================
+var startSpace = 3;
+var space = 5;
+var h=((100-space*(_count+1))/_count);
+var _top=space+(space+h)*idx+startSpace;
+var centerX=70;
+var centerY= (_top + h/2);
+
+
+titleList.push({
+text: pruductList[idx],
+textStyle: {
+fontSize: 14,
+// fontWeight: 'normal'
+},
+left: 80 + '%',
+top: (_top-4) + '%',
+});
+
+seriesList.push({
+name: pruductList[idx],
+type: 'pie',
+radius: [0, h+'%'],
+center: ['85%', centerY + '%'],
+data: pieData,
+}
+);
+
+}
+
+option = {
+legend: {
+x: 'left',
+},
+title: titleList,
+grid: gridsList,
+xAxis: xAxisList,
+yAxis: yAxisList,
+series: seriesList,
+tooltip: {
+trigger: "item",
+formatter: "{a} <br/>{b} : {c}"
+},
+toolbox: {
+show: true,
+feature: {
+mark: {
+show: true
+},
+dataZoom:[{
+// xAxisIndex: 0,
+// yAxisIndex: 'none',
+yAxisIndex: false,
+start: -5,
+end: +105,
+},{
+// xAxisIndex:'none' ,
+xAxisIndex: false,
+start: -5,
+end: +105,
+},
+],
+dataView: {
+show: true,
+readOnly: true,
+},
+magicType: {
+// title : {
+//                   line : '折线图切换',
+//                   bar : '柱形图切换',
+//                   stack : '堆积',
+//                   tiled : '平铺'
+//                   },
+show: true,
+type: ['line', 'bar'],
+},
+restore: {
+show: true,
+}
+}
+}
+};
+
+// myChart.clear();
+myChart.setOption(option, true);
+myChart.resize();
+};
+
+window.onresize = myChart.resize ;
+init()
+
+
+</script>-->
+</body>
+</html>

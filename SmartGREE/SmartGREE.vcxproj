@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71A32153-D659-3806-B9C8-BF0C6D9ED21A}</ProjectGuid>
+    <RootNamespace>SmartGREE</RootNamespace>
+    <Keyword>QtVS_v303</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>SmartGREE</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>SmartGREE</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\</OutDir>
+    <IntDir>debug\</IntDir>
+    <TargetName>SmartGREE</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\</OutDir>
+    <IntDir>release\</IntDir>
+    <TargetName>SmartGREE</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2015_64</QtInstall>
+    <QtModules>core;sql;network;gui;axcontainer;svg;widgets;qml;positioning;serialport;printsupport;webchannel;quick;concurrent;webengine;webenginewidgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2015_64</QtInstall>
+    <QtModules>core;sql;network;gui;axcontainer;svg;widgets;qml;positioning;serialport;printsupport;webchannel;quick;concurrent;webengine;webenginewidgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;..\..\..\SmartGREE\SmartGREE;.;..\..\..\SmartGREE\Utility\UtilitySrc;..\..\..\SmartGREE\LogWidget;..\..\..\SmartGREE\lib\log4qt;..\..\..\SmartGREE\lib;..\..\..\SmartGREE\LoginModule;..\..\..\SmartGREE\PlcCLient;..\..\..\SmartGREE\TcpComm\TcpCommSrc;..\..\..\SmartGREE\CameraWidget;..\..\..\SmartGREE\CameraForm;..\..\..\SmartGREE\CameraForm\include;..\..\..\SmartGREE\CameraForm\include\halcon17X64;..\..\..\SmartGREE\CameraForm\include\halcon17X64\halconcpp;..\..\..\SmartGREE\CameraForm\include\Daheng;E:/SmartGREE/CameraForm/include/opencv;..\..\..\SmartGREE\CameraForm\include\Calib2D;..\..\..\SmartGREE\CameraForm\include\pcl-1.8;..\..\..\SmartGREE\CameraForm\include\boost;..\..\..\SmartGREE\CameraForm\include\Eigen;..\..\..\SmartGREE\SettingWidgets;..\..\..\SmartGREE\ProductWidgets;..\..\..\SmartGREE\SystemButtonWidget;..\..\..\SmartGREE\SystemButtonWidget\Resources;..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc;D:\devsoft\QT\5.9.3\msvc2015_64\include;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtSvg;D:\devsoft\QT\5.9.3\msvc2015_64\include\ActiveQt;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWebEngineWidgets;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtPrintSupport;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWidgets;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWebEngineCore;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtQuick;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtGui;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtANGLE;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtSql;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtConcurrent;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWebChannel;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtQml;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtNetwork;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtSerialPort;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtPositioning;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtCore;release;..\build;D:\devsoft\QT\5.9.3\msvc2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew --source-charset:utf-8 --execution-charset:utf-8 --source-charset:utf-8 --execution-charset:utf-8 /source-charset:utf-8 /execution-charset:utf-8 --source-charset:utf-8 --execution-charset:utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;TCPCOMM_LIBRARY_IMPORT;QT_NO_DEBUG;QT_AXCONTAINER_LIB;QT_AXBASE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;E:\SmartGREE\lib\log4qt\debug\log4qt.lib;E:\SmartGREE\bin\TcpCommLib.lib;E:\SmartGREE\CameraForm\lib\halcon17X64\halcon.lib;E:\SmartGREE\CameraForm\lib\halcon17X64\halconcpp.lib;E:\SmartGREE\CameraForm\lib\Daheng\GxIAPICPP.lib;E:\SmartGREE\CameraForm\lib\OpenCv\opencv_world320.lib;E:\SmartGREE\CameraForm\lib\Calib2D\AlgebraBasicAlgom.lib;E:\SmartGREE\CameraForm\lib\Calib2D\Calibration.lib;E:\SmartGREE\CameraForm\lib\Calib2D\GeomBasicAlgom.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_common_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_features_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_filters_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_io_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_io_ply_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_kdtree_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_keypoints_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_ml_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_octree_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_outofcore_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_people_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_recognition_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_registration_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_sample_consensus_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_search_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_segmentation_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_stereo_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_surface_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_tracking_release.lib;E:\SmartGREE\CameraForm\lib\PCL\pcl_visualization_release.lib;ole32.lib;oleaut32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\devsoft\QT\5.9.3\msvc2015_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;E:\SmartGREE\CameraForm\lib\halcon17X64;E:\SmartGREE\CameraForm\lib\Daheng;E:\SmartGREE\CameraForm\lib\OpenCv;E:\SmartGREE\CameraForm\lib\Calib2D;E:\SmartGREE\CameraForm\lib\PCL;D:\devsoft\QT\5.9.3\msvc2015_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\SmartGREE.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;TCPCOMM_LIBRARY_IMPORT;QT_NO_DEBUG;QT_SVG_LIB;QT_AXCONTAINER_LIB;QT_AXBASE_LIB;QT_WEBENGINEWIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>..\build</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;..\..\..\SmartGREE\SmartGREE;.;..\..\..\SmartGREE\Utility\UtilitySrc;..\..\..\SmartGREE\LogWidget;..\..\..\SmartGREE\lib\log4qt;..\..\..\SmartGREE\lib;..\..\..\SmartGREE\LoginModule;..\..\..\SmartGREE\PlcCLient;..\..\..\SmartGREE\TcpComm\TcpCommSrc;..\..\..\SmartGREE\CameraWidget;..\..\..\SmartGREE\CameraForm;..\..\..\SmartGREE\CameraForm\include;..\..\..\SmartGREE\CameraForm\include\halcon17X64;..\..\..\SmartGREE\CameraForm\include\halcon17X64\halconcpp;..\..\..\SmartGREE\CameraForm\include\Daheng;E:/SmartGREE/CameraForm/include/opencv;..\..\..\SmartGREE\CameraForm\include\Calib2D;..\..\..\SmartGREE\CameraForm\include\pcl-1.8;..\..\..\SmartGREE\CameraForm\include\boost;..\..\..\SmartGREE\CameraForm\include\Eigen;..\..\..\SmartGREE\SettingWidgets;..\..\..\SmartGREE\ProductWidgets;..\..\..\SmartGREE\SystemButtonWidget;..\..\..\SmartGREE\SystemButtonWidget\Resources;..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc;D:\devsoft\QT\5.9.3\msvc2015_64\include;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtSvg;D:\devsoft\QT\5.9.3\msvc2015_64\include\ActiveQt;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWebEngineWidgets;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtPrintSupport;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWidgets;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWebEngineCore;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtQuick;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtGui;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtANGLE;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtSql;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtConcurrent;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtWebChannel;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtQml;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtNetwork;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtSerialPort;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtPositioning;D:\devsoft\QT\5.9.3\msvc2015_64\include\QtCore;debug;..\build;D:\devsoft\QT\5.9.3\msvc2015_64\mkspecs\win32-msvc;..\;.\MoveFile;.\MoveFile\Daheng;.\MoveFile\halcon17X64;.\MoveFile\halcon17X64\halconcpp;.\MoveFile\log4qt;.\MoveFile\TcpCommSrc;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew --source-charset:utf-8 --execution-charset:utf-8 --source-charset:utf-8 --execution-charset:utf-8 /source-charset:utf-8 /execution-charset:utf-8 --source-charset:utf-8 --execution-charset:utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;TCPCOMM_LIBRARY_IMPORT;QT_AXCONTAINER_LIB;QT_AXBASE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;halcon.lib;halconcpp.lib;GxIAPICPP.lib;opencv_world320d.lib;pcl_common_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_io_debug.lib;pcl_io_ply_debug.lib;pcl_kdtree_debug.lib;pcl_keypoints_debug.lib;pcl_ml_debug.lib;pcl_octree_debug.lib;pcl_outofcore_debug.lib;pcl_people_debug.lib;pcl_recognition_debug.lib;pcl_registration_debug.lib;pcl_sample_consensus_debug.lib;pcl_search_debug.lib;pcl_segmentation_debug.lib;pcl_stereo_debug.lib;pcl_surface_debug.lib;pcl_tracking_debug.lib;pcl_visualization_debug.lib;ole32.lib;oleaut32.lib;user32.lib;gdi32.lib;advapi32.lib;log4qt.lib;TcpCommLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\devsoft\QT\5.9.3\msvc2015_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;E:\SmartGREE\CameraForm\lib\halcon17X64;E:\SmartGREE\CameraForm\lib\Daheng;E:\SmartGREE\CameraForm\lib\OpenCv;E:\SmartGREE\CameraForm\lib\Calib2D;E:\SmartGREE\CameraForm\lib\PCL;..\;.\LibFile;..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\SmartGREE.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;TCPCOMM_LIBRARY_IMPORT;QT_SVG_LIB;QT_AXCONTAINER_LIB;QT_AXBASE_LIB;QT_WEBENGINEWIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>..\build</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ClickLineEdit.cpp" />
+    <ClCompile Include="MoveFile\AboutWidget.cpp" />
+    <ClCompile Include="MoveFile\cameraform.cpp" />
+    <ClCompile Include="MoveFile\CameraWidget.cpp" />
+    <ClCompile Include="MoveFile\DataStatistics.cpp" />
+    <ClCompile Include="MoveFile\DsCycleBase.cpp" />
+    <ClCompile Include="MoveFile\DsDay.cpp" />
+    <ClCompile Include="MoveFile\DsGroup.cpp" />
+    <ClCompile Include="MoveFile\DsMonth.cpp" />
+    <ClCompile Include="MoveFile\DsWidget.cpp" />
+    <ClCompile Include="MoveFile\DsYear.cpp" />
+    <ClCompile Include="MoveFile\GXBitmap.cpp" />
+    <ClCompile Include="MoveFile\helper.cpp" />
+    <ClCompile Include="MoveFile\HelpWidget.cpp" />
+    <ClCompile Include="MoveFile\logindialog.cpp" />
+    <ClCompile Include="MoveFile\LogWidget.cpp" />
+    <ClCompile Include="MoveFile\LogWidgetAppender.cpp" />
+    <ClCompile Include="MoveFile\main.cpp" />
+    <ClCompile Include="MoveFile\MaintenanceWidget.cpp" />
+    <ClCompile Include="MoveFile\mainwindow.cpp" />
+    <ClCompile Include="MoveFile\MyTemplate.cpp" />
+    <ClCompile Include="MoveFile\MyWebView.cpp" />
+    <ClCompile Include="MoveFile\nosoftdogdialog.cpp" />
+    <ClCompile Include="MoveFile\ProductBaseForm.cpp" />
+    <ClCompile Include="MoveFile\ProductDataForm.cpp" />
+    <ClCompile Include="MoveFile\ProductNowForm.cpp" />
+    <ClCompile Include="MoveFile\ProductSqlForm.cpp" />
+    <ClCompile Include="MoveFile\ProtocolHandller.cpp" />
+    <ClCompile Include="MoveFile\RollingDateTime.cpp" />
+    <ClCompile Include="MoveFile\SettingBaseWidget.cpp" />
+    <ClCompile Include="MoveFile\SettingCameraWidget.cpp" />
+    <ClCompile Include="MoveFile\SettingDatas.cpp" />
+    <ClCompile Include="MoveFile\SettingImageWidget.cpp" />
+    <ClCompile Include="MoveFile\SettingLogWidget.cpp" />
+    <ClCompile Include="MoveFile\SettingMaintenance.cpp" />
+    <ClCompile Include="MoveFile\SettingPlcWidget.cpp" />
+    <ClCompile Include="MoveFile\SettingProjectWidget.cpp" />
+    <ClCompile Include="MoveFile\SettingRobotWidget.cpp" />
+    <ClCompile Include="MoveFile\SettingSystemWidget.cpp" />
+    <ClCompile Include="MoveFile\splashscreen.cpp" />
+    <ClCompile Include="MoveFile\SqlFunc.cpp" />
+    <ClCompile Include="MoveFile\systembuttonwidget.cpp" />
+    <ClCompile Include="MoveFile\TitleForm.cpp" />
+    <ClCompile Include="MoveFile\UserManager.cpp" />
+    <ClCompile Include="MoveFile\XDatabase.cpp" />
+    <ClCompile Include="MoveFile\XTableViewModel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ClickLineEdit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UserModule-en.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Administrator\Desktop\Smart\SmartGREE\Resources\appicon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MoveFile\AboutWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MoveFile\cameraform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MoveFile\CameraWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\build\ui_AboutWidget.h" />
+    <ClInclude Include="..\build\ui_cameraform.h" />
+    <ClInclude Include="..\build\ui_CameraWidget.h" />
+    <ClInclude Include="..\build\ui_DsWidget.h" />
+    <ClInclude Include="..\build\ui_HelpWidget.h" />
+    <ClInclude Include="..\build\ui_logindialog.h" />
+    <ClInclude Include="..\build\ui_LogWidget.h" />
+    <ClInclude Include="..\build\ui_MaintenanceWidget.h" />
+    <ClInclude Include="..\build\ui_mainwindow.h" />
+    <ClInclude Include="..\build\ui_MyTemplate.h" />
+    <ClInclude Include="..\build\ui_nosoftdogdialog.h" />
+    <ClInclude Include="..\build\ui_ProductBaseForm.h" />
+    <ClInclude Include="..\build\ui_ProductDataForm.h" />
+    <ClInclude Include="..\build\ui_ProductNowForm.h" />
+    <ClInclude Include="..\build\ui_ProductSqlForm.h" />
+    <ClInclude Include="..\build\ui_SettingBaseWidget.h" />
+    <ClInclude Include="..\build\ui_SettingCameraWidget.h" />
+    <ClInclude Include="..\build\ui_SettingImageWidget.h" />
+    <ClInclude Include="..\build\ui_SettingLogWidget.h" />
+    <ClInclude Include="..\build\ui_SettingMaintenance.h" />
+    <ClInclude Include="..\build\ui_SettingPlcWidget.h" />
+    <ClInclude Include="..\build\ui_SettingProjectWidget.h" />
+    <ClInclude Include="..\build\ui_SettingRobotWidget.h" />
+    <ClInclude Include="..\build\ui_SettingSystemWidget.h" />
+    <ClInclude Include="..\build\ui_SplashScreen.h" />
+    <ClInclude Include="..\build\ui_systembuttonwidget.h" />
+    <ClInclude Include="..\build\ui_TitleForm.h" />
+    <ClInclude Include="MoveFile\DataStatistics.h" />
+    <ClInclude Include="MoveFile\DataStatistics_global.h" />
+    <ClInclude Include="MoveFile\DefinesGlobal.h" />
+    <ClInclude Include="MoveFile\GXBitmap.h" />
+    <ClInclude Include="MoveFile\helper.h" />
+    <QtMoc Include="MoveFile\nosoftdogdialog.h" />
+    <ClInclude Include="MoveFile\ProductLineData.h" />
+    <ClInclude Include="MoveFile\SettingKeys.h" />
+    <ClInclude Include="MoveFile\SqlFunc.h" />
+    <ClInclude Include="MoveFile\uihelper.h" />
+    <ClInclude Include="MoveFile\userdata.h" />
+    <ClInclude Include="MoveFile\usermodule_global.h" />
+    <ClInclude Include="MoveFile\XTableViewModel.h" />
+    <QtMoc Include="MoveFile\XDatabase.h" />
+    <QtMoc Include="MoveFile\UserManager.h" />
+    <QtMoc Include="MoveFile\TitleForm.h" />
+    <QtMoc Include="MoveFile\systembuttonwidget.h" />
+    <QtMoc Include="MoveFile\SplashScreen.h" />
+    <QtMoc Include="MoveFile\SettingSystemWidget.h" />
+    <QtMoc Include="MoveFile\SettingRobotWidget.h" />
+    <QtMoc Include="MoveFile\SettingProjectWidget.h" />
+    <QtMoc Include="MoveFile\SettingPlcWidget.h" />
+    <QtMoc Include="MoveFile\SettingMaintenance.h" />
+    <QtMoc Include="MoveFile\SettingLogWidget.h" />
+    <QtMoc Include="MoveFile\SettingImageWidget.h" />
+    <QtMoc Include="MoveFile\SettingDatas.h" />
+    <QtMoc Include="MoveFile\SettingCameraWidget.h" />
+    <QtMoc Include="MoveFile\SettingBaseWidget.h" />
+    <QtMoc Include="MoveFile\RollingDateTime.h" />
+    <QtMoc Include="MoveFile\ProtocolHandller.h" />
+    <QtMoc Include="MoveFile\ProductSqlForm.h" />
+    <QtMoc Include="MoveFile\ProductNowForm.h" />
+    <QtMoc Include="MoveFile\ProductDataForm.h" />
+    <QtMoc Include="MoveFile\ProductBaseForm.h" />
+    <QtMoc Include="MoveFile\MyWebView.h" />
+    <QtMoc Include="MoveFile\MyTemplate.h" />
+    <QtMoc Include="MoveFile\mainwindow.h" />
+    <QtMoc Include="MoveFile\MaintenanceWidget.h" />
+    <QtMoc Include="MoveFile\LogWidgetAppender.h" />
+    <QtMoc Include="MoveFile\LogWidget.h" />
+    <QtMoc Include="MoveFile\logindialog.h" />
+    <QtMoc Include="MoveFile\HelpWidget.h" />
+    <QtMoc Include="MoveFile\DsYear.h" />
+    <QtMoc Include="MoveFile\DsWidget.h" />
+    <QtMoc Include="MoveFile\DsMonth.h" />
+    <QtMoc Include="MoveFile\DsGroup.h" />
+    <QtMoc Include="MoveFile\DsDay.h" />
+    <QtMoc Include="MoveFile\DsCycleBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="MoveFile\AboutWidget.ui" />
+    <QtUic Include="MoveFile\cameraform.ui" />
+    <QtUic Include="MoveFile\CameraWidget.ui" />
+    <QtUic Include="MoveFile\DsWidget.ui" />
+    <QtUic Include="MoveFile\HelpWidget.ui" />
+    <QtUic Include="MoveFile\logindialog.ui" />
+    <QtUic Include="MoveFile\LogWidget.ui" />
+    <QtUic Include="MoveFile\MaintenanceWidget.ui" />
+    <QtUic Include="MoveFile\mainwindow.ui" />
+    <QtUic Include="MoveFile\MyTemplate.ui" />
+    <QtUic Include="MoveFile\nosoftdogdialog.ui" />
+    <QtUic Include="MoveFile\ProductBaseForm.ui" />
+    <QtUic Include="MoveFile\ProductDataForm.ui" />
+    <QtUic Include="MoveFile\ProductNowForm.ui" />
+    <QtUic Include="MoveFile\ProductSqlForm.ui" />
+    <QtUic Include="MoveFile\SettingBaseWidget.ui" />
+    <QtUic Include="MoveFile\SettingCameraWidget.ui" />
+    <QtUic Include="MoveFile\SettingImageWidget.ui" />
+    <QtUic Include="MoveFile\SettingLogWidget.ui" />
+    <QtUic Include="MoveFile\SettingMaintenance.ui" />
+    <QtUic Include="MoveFile\SettingPlcWidget.ui" />
+    <QtUic Include="MoveFile\SettingProjectWidget.ui" />
+    <QtUic Include="MoveFile\SettingRobotWidget.ui" />
+    <QtUic Include="MoveFile\SettingSystemWidget.ui" />
+    <QtUic Include="MoveFile\SplashScreen.ui" />
+    <QtUic Include="MoveFile\systembuttonwidget.ui" />
+    <QtUic Include="MoveFile\TitleForm.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="ResourceFile\logindialog.qrc" />
+    <QtRcc Include="ResourceFile\resources.qrc" />
+    <QtRcc Include="ResourceFile\systembuttons.qrc" />
+    <QtRcc Include="ResourceFile\web.qrc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

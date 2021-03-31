@@ -1,0 +1,16 @@
+#ifndef TCPCOMM_GLOBAL_H
+#define TCPCOMM_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+
+#if defined(TCPCOMM_LIBRARY)
+#  define TCPCOMMSHARED_EXPORT Q_DECL_EXPORT
+#elif TCPCOMM_LIBRARY_IMPORT
+#  define TCPCOMMSHARED_EXPORT Q_DECL_IMPORT
+#else
+#  define TCPCOMMSHARED_EXPORT
+#endif
+
+
+#endif // TCPCOMM_GLOBAL_H

@@ -1,0 +1,250 @@
+﻿
+LoginDialog
+{
+    border-image:url(:login/login_background.png);
+}
+
+LoginDialog QLabel#label_logo
+{
+    qproperty-minimumSize: 260px 90px;
+    qproperty-maximumSize: 260px 90px;
+    border-image:url(:login/logo_login.png);
+}
+LoginDialog QLabel#label_title
+{
+    font-size: 45px;
+    color:#b8b9c1;
+}
+LoginDialog QLabel#label_userSetting{
+	 font-size: 26px;
+     color:#e89316;
+}
+LoginDialog QLabel#label_user,
+QLabel#label_user_2
+{
+    qproperty-minimumSize: 26px 26px;
+    qproperty-maximumSize: 26px 26px;
+    border-image:url(:login/user.png);
+}
+LoginDialog QLabel#label_passwd,
+QLabel#label_passwd_2,
+QLabel#label_passwd_3
+{
+    qproperty-minimumSize: 26px 26px;
+    qproperty-maximumSize: 26px 26px;
+    border-image:url(:login/passwd.png);
+}
+LoginDialog QFrame#line_user,
+QFrame#line_user_2,
+QFrame#line_passwd,
+QFrame#line_passwd_2,
+QFrame#line_passwd_3
+{
+	min-height:0.5px;
+	max-height:0.5px;
+        border-image:url(:login/line.png);
+    background: #4a4a4a;
+}
+LoginDialog QLineEdit#lineEdit_userName,
+QLineEdit#lineEdit_userName_2,
+QLineEdit#lineEdit_passwd,
+QLineEdit#lineEdit_passwd_2,
+QLineEdit#lineEdit_passwd_3
+{
+     border-style:none;
+     background-color:transparent;
+     font-size: 14px;
+     color:#7d7d7d;
+}
+LoginDialog QLineEdit#lineEdit_userName:focus,
+QLineEdit#lineEdit_userName_2:focus,
+QLineEdit#lineEdit_passwd:focus,
+QLineEdit#lineEdit_passwd_2:focus,
+QLineEdit#lineEdit_passwd_3:focus
+{
+    color:#d1d1d1;
+}
+
+LoginDialog QLabel#label_tipIcon,
+QLabel#label_tipIcon_2{
+	qproperty-text:"";
+	qproperty-minimumSize: 26px 26px;
+    qproperty-maximumSize: 26px 26px;
+        border-image:url(:login/tip_icon.png);
+}
+LoginDialog QLabel#label_tipText,
+QLabel#label_tipText_2{
+	color:red;
+}
+
+LoginDialog QPushButton#pushButton_login,
+LoginDialog QPushButton#pushButton_confirm
+{
+    color:#fff0d9;
+    background: #e89316;
+    font-size: 14px;
+    text-align:center;
+    min-width:380px;
+    min-height:40px;
+    border-radius:8px;
+    border-style: solid;
+}
+LoginDialog QPushButton#pushButton_login:hover,
+LoginDialog QPushButton#pushButton_confirm:hover
+{
+    background: #f3a128;
+}
+LoginDialog QPushButton#pushButton_login:pressed,
+LoginDialog QPushButton#pushButton_confirm:pressed
+{
+    background: #e89316;
+}
+
+LoginDialog QPushButton#pushButton_returnLogin
+{
+    color:#b8b9c1;
+    background: #474747;
+    font-size: 14px;
+    text-align:center;
+    min-width:380px;
+    min-height:40px;
+    border-radius:8px;
+    border-style: solid;
+}
+LoginDialog QPushButton#pushButton_returnLogin:hover
+{
+    background: #4f4f4f;
+}
+LoginDialog QPushButton#pushButton_returnLogin:pressed
+{
+    background: #404040;
+}
+
+
+LoginDialog QLabel#label_change,
+QLabel#label_help
+{
+    color:#a2a1a1;
+    font-size: 14px;
+}
+
+LoginDialog QLabel#label_change:hover,
+QLabel#label_help:hover
+{
+    color:#f3a128;
+}
+
+LoginDialog QLabel#label_target
+{
+    color:#a2a1a1;
+    font-size: 20px;
+}
+LoginDialog QLabel#label_verLabel,
+QLabel#label_version
+{
+    color:#5b5b5b;
+    font-size: 12px;
+}
+LoginDialog QStackedWidget#stackedWidget_center{
+	qproperty-frameShape:"NoFrame";
+}
+
+LoginDialog QWidget#widget_select{
+	min-height:52px;
+        max-height:52px;
+}
+LoginDialog QPushButton#pushButton_operator,
+QPushButton#pushButton_developer
+{
+    font-size: 12pt;
+    color:#a7a7a7;
+	border:none;
+	min-height:48px;
+    background-color:transparent;
+}
+LoginDialog QPushButton#pushButton_operator:!checked:hover,
+QPushButton#pushButton_developer:!checked:hover
+{
+    color:#e89316;
+    font-size: 13px;
+}
+LoginDialog QPushButton#pushButton_operator:checked,
+QPushButton#pushButton_developer:checked
+{
+    color:#e89316;
+    font-size: 13px;
+}
+LoginDialog QPushButton#pushButton_operator:!checked,
+QPushButton#pushButton_developer:!checked
+{
+    font-size: 12px;
+    color:#a7a7a7;
+    background-color:transparent;
+}
+
+
+
+/************系统按钮最小******************/
+QPushButton#pushButton_sysMin
+{
+    qproperty-text:"";
+    qproperty-minimumSize: 60px 26px;
+    qproperty-maximumSize: 60px 26px;
+    border-image:url(:System/min_normal.png);
+}
+QPushButton#pushButton_sysMin:hover
+{
+    border-image:url(:System/min_hover.png);
+}
+QPushButton#pushButton_sysMin:pressed
+{
+    border-image:url(:System/min_press.png);
+}
+
+/************系统按钮最大******************/
+QPushButton#pushButton_sysMax
+{
+        qproperty-text:"";
+    qproperty-minimumSize: 60px 26px;
+    qproperty-maximumSize: 60px 26px;
+    border-image:url(:System/max_normal.png);
+}
+
+QPushButton#pushButton_sysMax:hover
+{
+    border-image:url(:System/max_hover.png);
+}
+QPushButton#pushButton_sysMax:pressed
+{
+    border-image:url(:System/max_press.png);
+}
+/************pushButton_sysMax isMax******************/
+QPushButton#pushButton_sysMax:checked
+{
+    border-image:url(:System/restore_normal.png);
+}
+QPushButton#pushButton_sysMax:checked:hover
+{
+    border-image:url(:System/restore_hover.png);
+}
+QPushButton#pushButton_sysMax:checked:pressed
+{
+    border-image:url(:System/restore_press.png);
+}
+
+/************系统按钮关闭******************/
+QPushButton#pushButton_sysClose
+{
+        qproperty-text:"";
+    qproperty-minimumSize: 60px 26px;
+    qproperty-maximumSize: 60px 26px;
+    border-image:url(:System/close_normal.png);
+}
+QPushButton#pushButton_sysClose:hover
+{
+    border-image:url(:System/close_hover.png);
+}
+QPushButton#pushButton_sysClose:pressed
+{
+    border-image:url(:System/close_press.png);
+}

@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>gree.qss</file>
+        <file>image/splashBasic.png</file>
+        <file>image/gree.svg</file>
+        <file>image/help.png</file>
+        <file>image/usr.png</file>
+        <file>image/error.png</file>
+        <file>image/ok.png</file>
+        <file>image/pause.png</file>
+        <file>image/settings.png</file>
+        <file>image/log2.png</file>
+        <file>image/user2.png</file>
+        <file>image/log.png</file>
+        <file>image/set2.png</file>
+        <file>image/usr4.png</file>
+        <file>image/max.png</file>
+        <file>image/min.png</file>
+        <file>image/close2.png</file>
+        <file>image/min2.png</file>
+        <file>test.js</file>
+        <file>image/plc-off.png</file>
+        <file>image/plc-on.png</file>
+        <file>image/robot-off.png</file>
+        <file>image/robot-on.png</file>
+        <file>image/camera-off.png</file>
+        <file>image/camera-on.png</file>
+        <file>image/log3.png</file>
+        <file>image/rep.png</file>
+        <file>image/clean.png</file>
+        <file>image/rep2.png</file>
+        <file>image/add.png</file>
+        <file>image/reduce.png</file>
+        <file>image/warn.png</file>
+    </qresource>
+</RCC>

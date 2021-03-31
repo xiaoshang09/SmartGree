@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="XSadd">
+      <UniqueIdentifier>{0bd2ee78-c100-4745-828a-4bc415a30f23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\AboutWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\CameraWidget\CameraWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DataStatistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsCycleBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsDay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsMonth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsYear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\CameraForm\GXBitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\HelpWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\LogWidget\LogWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\LogWidget\LogWidgetAppender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SmartGREE\SmartGREE\MaintenanceWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\CameraForm\MyTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\MyWebView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\ProductWidgets\ProductBaseForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\ProductWidgets\ProductDataForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\ProductWidgets\ProductNowForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\ProductWidgets\ProductSqlForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\PlcCLient\ProtocolHandller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\RollingDateTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingBaseWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingCameraWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingDatas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingImageWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingLogWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingMaintenance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingPlcWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingProjectWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingRobotWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SettingWidgets\SettingSystemWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SmartGREE\SmartGREE\SplashScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\SqlFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SmartGREE\SmartGREE\TitleForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\LoginModule\UserManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\XDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SmartGREE\SmartGREE\XTableViewModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\CameraForm\cameraform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\Utility\UtilitySrc\helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\LoginModule\logindialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SmartGREE\SmartGREE\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SmartGREE\SmartGREE\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SmartGREE\SystemButtonWidget\systembuttonwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickLineEdit.cpp">
+      <Filter>XSadd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\AboutWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\CameraWidget\CameraWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DataStatistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DataStatistics_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SmartGREE\SmartGREE\DefinesGlobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsCycleBase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsDay.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsGroup.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsMonth.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsYear.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\..\SmartGREE\CameraForm\GXBitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\HelpWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\LogWidget\LogWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\LogWidget\LogWidgetAppender.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\SmartGREE\SmartGREE\MaintenanceWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\CameraForm\MyTemplate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\MyWebView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\ProductWidgets\ProductBaseForm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\ProductWidgets\ProductDataForm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\ProductLineData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\..\..\..\SmartGREE\ProductWidgets\ProductNowForm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\ProductWidgets\ProductSqlForm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\PlcCLient\ProtocolHandller.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\RollingDateTime.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingBaseWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingCameraWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingDatas.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingImageWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\..\SmartGREE\SettingWidgets\SettingKeys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingLogWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingMaintenance.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingPlcWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingProjectWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingRobotWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SettingWidgets\SettingSystemWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\SmartGREE\SmartGREE\SplashScreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\SqlFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\..\..\SmartGREE\SmartGREE\TitleForm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\LoginModule\UserManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\XDatabase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\SmartGREE\SmartGREE\XTableViewModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\..\..\..\SmartGREE\CameraForm\cameraform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\..\SmartGREE\Utility\UtilitySrc\helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\..\..\..\SmartGREE\LoginModule\logindialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\SmartGREE\SmartGREE\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\..\SmartGREE\SystemButtonWidget\systembuttonwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\..\SmartGREE\LoginModule\userdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SmartGREE\LoginModule\usermodule_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="ClickLineEdit.h">
+      <Filter>XSadd</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UserModule-en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\AboutWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\CameraWidget\CameraWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\DsWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\HelpWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\LogWidget\LogWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\SmartGREE\SmartGREE\MaintenanceWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\CameraForm\MyTemplate.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\ProductWidgets\ProductBaseForm.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\ProductWidgets\ProductDataForm.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\ProductWidgets\ProductNowForm.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\ProductWidgets\ProductSqlForm.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingBaseWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingCameraWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingImageWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingLogWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingMaintenance.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingPlcWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingProjectWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingRobotWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SettingWidgets\SettingSystemWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\SmartGREE\SmartGREE\SplashScreen.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\SmartGREE\SmartGREE\TitleForm.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\CameraForm\cameraform.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\LoginModule\logindialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\SmartGREE\SmartGREE\mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\..\..\SmartGREE\SystemButtonWidget\systembuttonwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\SmartGREE\Resources\image\add.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\camera-off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\camera-on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\check_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\check_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\clean.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\close2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\close_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\close_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\close_press.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web\dsData.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web\dsData.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web\dsNow.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web\dsNow.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web\echarts.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\error.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\gree.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\gree.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\gree.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\greep.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\help.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\line.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\log.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\log2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\log3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\login_background.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\..\..\..\SmartGREE\LoginModule\Resources\logindialog.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\logindialog.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\logo_login.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\max.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\max_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\max_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\max_press.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\min.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\min2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\min_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\min_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\min_press.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web\myDark.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\ok.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\passwd.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\pause.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\plc-off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\plc-on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\reduce.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\rep.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\rep2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\..\..\SmartGREE\Resources\resources.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\restore_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\restore_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\System\restore_press.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\robot-off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\robot-on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\set2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\settings.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\splashBasic.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web\styleDark.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\systembuttons.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\..\..\..\SmartGREE\SystemButtonWidget\Resources\systembuttons.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\test.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\tip_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\uncheck_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\uncheck_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\user.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\user2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\user_o_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\user_o_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\user_t_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\SmartGREE\LoginModule\Resources\login\user_t_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\usr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\usr4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\SmartGREE\Resources\image\warn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\..\..\..\SmartGREE\DataStatistics\DataStatisticsSrc\Resources\web.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Administrator\Desktop\Smart\SmartGREE\Resources\appicon.rc" />
+  </ItemGroup>
+</Project>
